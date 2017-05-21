@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gmail820castromarcelo.com.jeraestagio.CadastrarLivros">
+
+    <TextView
+        android:id="@+id/nomeLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="28dp"
+        android:text="Nome do livro:" />
+
+    <TextView
+        android:id="@+id/qtdPaginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nomeLivro"
+        android:layout_below="@+id/nomeLivro"
+        android:layout_marginTop="118dp"
+        android:text="Total de páginas:" />
+
+    <EditText
+        android:id="@+id/tituloLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nomeLivro"
+        android:layout_below="@+id/nomeLivro"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/totalPaginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qtdPaginas"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/totalPaginas"
+        android:text="CADASTRAR" />
+</RelativeLayout>

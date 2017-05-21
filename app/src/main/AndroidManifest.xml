@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".CadastrarLivros">
         </activity>
+        <activity android:name=".CriarLembrete">
+        </activity>
     </application>
 
 </manifest>
