@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,28 @@
     tools:context="gmail820castromarcelo.com.jeraestagio.MainActivity">
 
     <TextView
+        android:id="@+id/livrosC"
+        android:layout_width="225dp"
+        android:layout_height="37dp"
+        android:layout_alignBaseline="@+id/adicionar"
+        android:layout_alignBottom="@+id/adicionar"
+        android:layout_toStartOf="@+id/adicionar"
+        android:text="Livros Cadastrados" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="450dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp" />
+
+    <Button
+        android:id="@+id/adicionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="ADICIONAR LIVRO"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
