@@ -1,5 +1,6 @@
 package gmail820castromarcelo.com.jeraestagio;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,12 @@ public class CriarLembrete extends MainActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        // Retornar para main activ
+        if (v == lembrete) {
+            Intent getBack = new Intent(this, MainActivity.class);
+            getBack.putExtra("Dia:", dataLembrete.getText().toString());
+            getBack.putExtra("Hora:", horarioLembrete.getText().toString());
+            getBack.putExtra("Livro:", livroLembrete.getText().toString());
+            startActivity(getBack);
+        }
     }
 }

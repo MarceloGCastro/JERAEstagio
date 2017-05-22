@@ -34,7 +34,11 @@ public class CadastrarLivros extends MainActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         if ( v == cadastrar) {
-           //Voltar a tela principal e colocar na listView.
+            Intent getBack = new Intent(this, MainActivity.class);
+            getBack.putExtra("Título: ", tituloLivro.getText().toString());
+
+            startActivity(getBack);
+            //
         }
     }
 }

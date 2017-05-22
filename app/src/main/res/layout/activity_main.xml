@@ -34,9 +34,9 @@
         android:id="@+id/lembrete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/lista"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="14dp"
-        android:text="CRIAR LEMBRETE" />
+        android:text="CRIAR LEMBRETE"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/livrosC"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
